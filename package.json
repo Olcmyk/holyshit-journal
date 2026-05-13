@@ -1,0 +1,49 @@
+{
+  "name": "holyshit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node tests/submission-system.test.js",
+    "test:summary": "node tests/submission-system.test.js 2>&1 | grep -A 100 '测试总结'",
+    "test:data": "tsx scripts/insert-test-data.ts",
+    "postinstall": "bash scripts/copy-pdf-worker.sh"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.2.0",
+    "@supabase/ssr": "^0.1.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "altcha": "^3.0.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^3.0.6",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.0.379",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.2.1",
+    "tesseract.js": "^7.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/crypto-js": "^4.2.1",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.17",
+    "dotenv": "^17.4.2",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.1.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.3.3"
+  }
+}
