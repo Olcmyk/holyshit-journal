@@ -26,44 +26,6 @@
 
 **其他：** Tesseract.js、pdf-lib、pdfjs-dist、ALTCHA
 
-## 快速开始
-
-```bash
-# 克隆项目
-git clone https://github.com/your-username/holyshit.git
-cd holyshit
-
-# 安装依赖
-npm install
-
-# 配置环境变量
-cp .env.local.example .env.local
-# 编辑 .env.local 填入你的 Supabase 和其他 API 密钥
-
-# 启动开发服务器
-npm run dev
-```
-
-访问 [http://localhost:3000](http://localhost:3000) 查看项目。
-
-## 项目结构
-
-```
-holyshit/
-├── app/              # Next.js 应用目录
-│   ├── api/         # API 路由
-│   ├── latrine/     # 茅坑页面（投票）
-│   └── submit/      # 投稿页面
-├── lib/              # 工具库
-├── types/            # TypeScript 类型定义
-├── tests/            # 测试文件
-└── docs/             # 项目文档
-```
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
 ## 赞助
 
 [赞助地址](https://afdian.com/a/holyshitjournal/plan)
